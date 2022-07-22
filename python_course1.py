@@ -4,6 +4,8 @@
     Author: John Huang
 '''
 
+# ========= 2022-07-19 ===========
+
 # 穩定具體的變數類型
 print(f'type of 3: {type(3)}')
 print(f'type of 3.14: {type(3.14)}')
@@ -55,16 +57,3 @@ def outputZeroToFiveTableDictToFile():
             if count == 6: 
                 count = 0 
                 fw.write('\n') 
-
-
-
-
-
-
-
-
-
-
-
-
-
