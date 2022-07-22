@@ -11,7 +11,7 @@
 # 2. 繼承 (Inheritage)
 # 3. 多型 (Polymorphism)
 
-# 封裝: Class 型別 展示 
+# 封裝: Class 型別展示 
 # 類別裡的變數(variable) -> 屬性(attribute), 類別裡的函式(function) -> 方法(method)
 # 屬性和方法都叫做該類別的成員(member)
 # 成員前綴符號 __ 即為私有成員(private member)，例如 __hahaha()

@@ -15,15 +15,22 @@ def convertComplexToDict(complexNum:complex) -> dict:
     return {'Real': real, 'Imag': imag, 'Abs': absolute}
 
 # 延伸2: 
-# 參數 None
-# output -> {..., 3+4j:{'Real': ...}, 3+5j:{'Real':...}, ...}
+# 參數 N, M
+# output -> {..., 3+4j:{'Real': ...}, 3+5j:{'Real':...}, ..., N+Mj:{...}}
 
 def generateNxMComplexDict(N:int, M:int) -> dict :
     table_dict = {}
-    complexNumberArray = generateNxMComplexArray(N, M)
-    for complexNum in complexNumberArray: 
+    complexNumArray = generateNxMComplexArray(N, M)
+    complexNumList = expandArrayToList(complexNumArray)
+    for complexNum in complexNumList: 
         table_dict[complexNum] = convertComplexToDict(complexNum)
     return table_dict
+
+def expandArrayToList(arr):
+    result = []
+    for item in arr:
+        result.extend(item)
+    return result 
 
 # 出題3: 
 # 產生一個檔案，內容如下:
@@ -32,7 +39,7 @@ def generateNxMComplexDict(N:int, M:int) -> dict :
 #  ....
 # N N+j ...   N+Mj
 
-def outputNxMComplexDictToFile(N:int, M:int, file:str = 'test.txt') : 
+def outputNxMComplexDictToFile(N:int, M:int, file:str = 'NxMComplexDict.txt') : 
     table_txt = generateNxMComplexTableText(N, M)
     with open(file, 'w') as fw: 
         fw.write(table_txt)

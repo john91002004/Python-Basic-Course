@@ -49,7 +49,7 @@ def generateZeroToFiveTableDict() -> dict :
 def outputZeroToFiveTableDictToFile(): 
     table_dict = generateZeroToFiveTableDict()
     count = 0 
-    with open(file='abc.txt', mode='w') as fw: 
+    with open(file='ZeroToFiveTableDict.txt', mode='w') as fw: 
         for key in table_dict.keys(): 
             fw.write(f'{key} ')
             # 滿足一行最大數量，換行
