@@ -60,14 +60,3 @@ def generateNxMComplexArray(N:int, M:int):
             complexNum = complex(a, b)
             arr[a].append(complexNum)
     return arr 
-
-
-
-
-
-
-
-
-
-
-
