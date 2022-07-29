@@ -17,7 +17,10 @@ class Card:
         return f'({self.__suit}, {self.__value})'
     
     def __eq__(self, other): 
-        return True if self.__suit == other.__suit and self.__value == other.__value else False 
+        if other == None: 
+            return False 
+        else:
+            return True if self.__suit == other.__suit and self.__value == other.__value else False 
 
     def __gt__(self, other): 
         if self.isValueGreaterThanOther(other): 

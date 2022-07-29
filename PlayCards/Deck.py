@@ -27,6 +27,14 @@ class Deck:
         else: 
             return self.__remainingCards.pop(0)
 
+    def distributeCards(self, card:Card): 
+        if self.__remainingCards.count(card) != 0: 
+            self.__remainingCards.remove(card)
+            return card
+        else: 
+            raise NoSuchCardException('No Such Card!!!')
 
 
+class NoSuchCardException(Exception):
+    pass
 
