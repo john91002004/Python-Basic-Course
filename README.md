@@ -26,6 +26,11 @@
 2. 單元測試
 
 ### Course 5
+1. Geometry 測試程式
+2. Geometry 產品程式
 
-
-
+### Project PlayCards
+0. 從使用案例(Use Case)找出物件行為
+1. Card, CardTest
+2. Deck, DeckTest
+3. Player, PlayerTest
